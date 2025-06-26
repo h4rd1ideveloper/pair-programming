@@ -52,7 +52,7 @@ export default function App() {
             {[Filter.all, Filter.pending, Filter.done].map((f, index) => (<button
                 key={index}
                 onClick={() => setFilter(f)}
-                className={`px-3 py-1 rounded ${filter === f ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                className={`px-3 py-1 rounded ${filter === f ? 'bg-blue-600 text-white' : 'bg-gray-400 text-white'}`}
             >
                 {f === Filter.all ? 'Todas' : f === Filter.pending ? 'Pendentes' : 'Concluídas'}
             </button>))}
