@@ -39,6 +39,8 @@ export default function App() {
                 ref={newTaskInputRef}
                 className="border rounded px-2 py-1 flex-1"
                 placeholder="Nova tarefa"
+                type="text"
+                id="newTask"
             />
             <button
                 className="bg-blue-600 text-white px-4 py-1 rounded"
