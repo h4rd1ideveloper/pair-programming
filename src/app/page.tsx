@@ -16,7 +16,10 @@ export default function App() {
 
     const newTaskInputRef = useRef<HTMLInputElement>(null)
 
-    const filteredTasks = useMemo(() => tasks.filter((task) => filter === Filter.done ? task.completed : filter === Filter.pending ? !task.completed : true), [filter, tasks])
+    const filteredTasks = useMemo(() => tasks.filter(
+        (task) => filter === Filter.done ?
+            task.completed : filter === Filter.pending ? !task.completed : true
+    ), [filter, tasks])
 
     const addTask = useCallback(() => {
         const title = newTaskInputRef.current?.value.trim()

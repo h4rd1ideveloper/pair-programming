@@ -4,7 +4,7 @@ import nextJest from 'next/jest';
 const createJestConfig = nextJest({dir: './'});
 
 const config: Config = {
-    clearMocks: true, // limpa mocks automaticamente
+    clearMocks: true,
     collectCoverage: true,
     coverageDirectory: 'coverage',
     coverageProvider: 'v8',

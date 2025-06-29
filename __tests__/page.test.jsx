@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import {render, screen, fireEvent} from '@testing-library/react';
-import App from '../src/app/page'; // Ajuste o caminho correto da sua página
+import App from '../src/app/page';
 
 describe('App Component', () => {
     it('renderiza o título da página', () => {
